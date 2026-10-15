@@ -26,12 +26,106 @@
     <a href="#prerequis" class="btn btn-ghost btn-sm hidden sm:inline-flex">prérequis</a>
     <a href="installation" class="btn btn-ghost btn-sm hidden sm:inline-flex">installation</a>
     <a href="#arborescence" class="btn btn-ghost btn-sm hidden sm:inline-flex">Arborescence</a>
-            <a href="https://github.com/PetitGameur404/Tdoc" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+     <a href="https://github.com/PetitGameur404/Tdoc" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
                 GitHub ↗
             </a>
 
         </nav>
 </header>
+<main class="mx-auto max-w-4xl px-4 py-8 flex flex-col gap-12">
+
+    <section id="acueil" class="text-centre flex flex-col gap-3">
+        <span class="badge badge-primary badge-outline mx-auto">guide d'installation</span>
+  <h1 class="text-4xl font-black">Installer et lancer <span class="text-primary">Tdoc</span></h1>
+        <p class="text-base opacity-70 max-w-xl mx-auto">
+            Guide simple pour installer les outils nécessaires, cloner le projet depuis github et lancer la documentation.
+        </p>
+    </section>
+    <section id="prereuis" class="flex flex-col gap-4">
+        <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-primary">étape 01</p>
+            <h2 class="text-2xl font-bold">Les prérequis</h2>
+        </div>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <article class="card border border-base-300 bg-base-100">
+                <div class="card-body gap-3">
+                    <h3 class="card-title text-xl" Visual Studio code></h3>
+                    <p class="text-sm opacity-70">éditeur de code léger pour modifier le projet et utiliser le terminal.</p>
+               <div class="card-action">
+                <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    Télécharger VS Code ↗
+                </a>
+               </div>
+                </div>
+            </article>
+            <article class="card border border-base-300 bg-base-100">
+                <div class="card-body gab-3">
+                    <h3 class="card-title text-xl">Git</h3>
+                    <p class="text-sm opacity-70">Outil pour cloner et suivre les versions du depôt officiel Tdoc</p>
+                <div class="card-action">
+                     <a href="https://git-scm.com/install/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                Installer Git ↗
+                </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="installation" class="flex flex-col gap-4">
+        <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-primary">étape 02</p>
+            <h2 class="text-2xl font-bold">clonner et ouvrir le projet</h2>
+        </div>
+        <article class="card border border-base-300 bg-base-100">
+            <div class="card-body gap-4">
+            <p class="text-sm opacity-70"> ouvrirton terminal et exécute ces comende</p>
+       <div class="rounded-xl bg-neutral text-neutral-content px-4 text-sm font-mono flex flex-col gab-2">
+        <p><span class="opacity-50"># 1. cloner le dépôt GitHub</span></p>
+        <p class="text-primary-content">git clone https://github.com/PetitGameur404/Tdoc.git</p>
+
+        <p> <span class="opacity-50"># 2. Entrer dans le dossier du projet </span></p>
+      <p class="text-primary-content">cd Tdoc</p>
+
+       <p><span class="opacity-50"># 3. Ouvrir dans VS Code</span></p>
+     <p class="text-primary-content">code .</p>
+     </div>
+     <div class="alert alert-info text-sm">
+        <span>ℹ️ Si la commande <code class="font-bold">code .</code>ne marche pas, ouvre VS Code et fais <strong>Fichier → Ouvrir un dossier</strong>.</span>
+     </div>
+        </div>
+        </article>
+    </section>
+
+     <!-- ÉTAPE 03 : ARBORESCENCE (FACILE À MODIFIER) -->
+      <section id="arborescence" class="flex flex-col gap-4">
+        <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-primary">étape 03</p>
+            <h2 class="text-2xl font-bold">arborescence du projet</h2>
+        <p class="text-sm opacity-70">Structure des fichiers du projet Tdoc (tu peux ajouter/retirer des éléments ici) :</p>
+        </div>
+      <article class="font-bolder border-base-300 bg-base-100">
+        <div class="card-body gab-3">
+            <ul class="font-mono text-sm bg-base-200 p-4 rounded-x1 flex flex-col gab-2">
+                <li class="flex items-center gab-2">
+                   📄 <span class="font-bold">index.html</span>
+                            <span class="text-xs font-sans opacity-60">— Page d'accueil principale</span>
+                </li>
+                <li class="flex items-center gab-2">
+                     📁 <span class="font-bold">/assets</span>
+                            <span class="text-xs font-sans opacity-60">— Images, icônes et scripts</span>
+                </li>
+                 <li class="flex items-center gap-2">
+                  📄 <span class="font-bold">README.md</span>
+                 <span class="text-xs font-sans opacity-60">— Description du projet sur GitHub</span>
+                    </li>
+            </ul>
+        </div>
+      </article>
+      </section>
+</main>
+<footer class="border-t border-base-300 bg-base-100 py-6 text-center text-sm opacity-60 mt-12">
+        <p>Tdoc · Documentation technique propulsée par Tailwind CSS et DaisyUI.</p>
+    </footer>
 
 </body>
 </html>

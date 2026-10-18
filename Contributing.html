@@ -37,7 +37,7 @@
 
         <h1 class="text-2xl mt-10">Ways to contribute :</h1>
 
-              <div class="overflow-x-auto rounded-box bg-neutral/30 justify-center flex mt-10">
+        <div class="overflow-x-auto rounded-box bg-neutral/30 justify-center flex mt-10">
         <table class="table">
             <!-- head -->
             <thead>
@@ -86,9 +86,34 @@
 
 
         <p class="mt-10 text-4xl font-['Grape_Nuts']">Step-by-step how to contribute ?</p>
-        <p class="mt-5">In a fisrt time you need to fork the repository</p>
+        <p class="mt-5 text-xl">1) In a fisrt time you need to fork the repository</p>
 
+        <img class="mt-5 rounded-box" src="assets/fork.png" alt="fork examples">
+
+        <p class="mt-10">For fork the project is very easy go to <a class="text-secondary font-bold" href="https://github.com/PetitGameur404/Tdoc/t">Tdoc repository</a>. <br> and click on the Fork button you can refere with the image above.</p>
+
+        <p class="mt-5 text-xl">1) In a fisrt time you need to fork the repository</p>
+
+        <div class="mockup-code mt-5" id="git-code"></div>
+
+         <div role="alert" class="alert alert-warning alert-soft mt-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+          <span> Please Keep the same code style (Tailwind + DaisyUI classe only) if you dont use the same style your contribution or reject. <a class="font-bold" href="https://daisyui.com/docs/">reference of the daisyUI components</a>. <br>
+                 Test your code in light and dark themes and finaly write commits in English.
+        </span>
+        </div>
+
+        <div role="alert" class="alert alert-info alert-soft mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 shrink-0 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span>Be kind and respectful</span>
+        </div>
         
+
+
 
 
     </div>
@@ -192,3 +217,42 @@
 </body>
 </html>
 
+<script>
+const gitLines = [
+  'git clone https://github.com/PetitGameur404/Tdoc.git',
+  'cd tdoc',
+  'git checkout -b my-feature',
+  '# make your changes...',
+  'git add .',
+  'git commit -m "Add my feature"',
+  'git push origin my-feature'
+];
+
+function renderMockup(gitLines, lines) {
+  const container = document.getElementById(gitLines);
+  lines.forEach((line, i) => {
+    const pre = document.createElement("pre");
+    pre.setAttribute("data-prefix", i + 1);
+    const code = document.createElement("code");
+    code.textContent = line;
+    pre.appendChild(code);
+    container.appendChild(pre);
+  });
+}
+
+
+
+  const container = document.getElementById("git-code");
+
+  gitLines.forEach((line, index) => {
+    const pre = document.createElement("pre");
+    pre.setAttribute("data-prefix", index + 1);
+
+    const code = document.createElement("code");
+    code.textContent = line;
+
+    pre.appendChild(code);
+    container.appendChild(pre);
+  });
+
+</script>

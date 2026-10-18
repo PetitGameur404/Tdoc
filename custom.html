@@ -176,7 +176,7 @@
         </select>
         </div>
 
-        <h1 class="mt-10 text-2xl">Who to create your's</h1>
+        <h1 class="mt-10 text-2xl">How to create your's</h1>
         <p class="mt-5 text-base">If none of the themes are suitable for viewing the image, <br> no problem, you can create your own.</p>
 
         <p class="text-2xl mt-10">1)</p>
@@ -191,20 +191,53 @@
 
         <p class="mt-10">Once on the page, you will have the option to use an existing theme <br> as a base and simply click to change elements such as colors, <br> raduis, and sizes.</p>
 
-        <div role="alert" class="alert alert-info alert-soft mt-5">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 shrink-0 stroke-current">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-          <span>Check the "default theme" box so that it uses the custom theme by default.</span>
-        </div>
+        
 
         <p class="text-2xl mt-10">2)</p>
-        <p class="mt-3">You need to go to DaisyUI theme generator</p>
+        <p class="mt-3">Create a css files exemple themes.css <br> and paste this default code in :</p>
 
-    </div>
+        <div class="mockup-code mt-5">
+          <pre data-prefix="1"><code id="21"></code></pre>
+          <pre data-prefix="2"><code id="22"></code></pre>
+          <pre data-prefix="2"><code id="23"></code></pre>
+        </div>
+
+         <p class="text-2xl mt-10">3)</p>
+         <p class="mt-3">Past your CSS of the DaisyUI theme generator, like this :</p>
+
+         <div class="mockup-code mt-5" id="theme-code"></div>
+
+         <div role="alert" class="alert alert-warning alert-soft mt-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+          <span>Copy only the part that begins with "color-scheme: "light"; to }" do not include the beginning, otherwise it will not work. <br> If you would like to know more, feel free to refer to the official DaisyUI <a class="font-bold" href="https://daisyui.com/docs/themes/">documentation</a>.</span>
+        </div>
+
+         <p class="text-2xl mt-10">4)</p>
+         <p class="mt-3">Ultimately, you simply need to copy the name of your theme into the HTML tag using `data-theme` and link your css file to html on past link in you head  :</p>
+
+          <div class="mockup-code mt-5 mb-20">
+                <pre data-prefix="1"><code id="31"></code></pre>
+                <pre data-prefix="2"><code id="32"></code></pre>
+                <pre data-prefix="2"><code id="33"></code></pre>
+                <pre data-prefix="3"><code id="34"></code></pre>
+                <pre data-prefix="4"><code id="35"></code></pre>
+              </div>
+
+              <h1 class="text-2xl">And you succeeded well done ! 🎉</h1>
+              <p>Now you have you own theme</p>
+          </div>
+
+                   
+          
+
+
+          
 
 
 </div>
+
 
 <footer class="footer sm:footer-horizontal justify-evenly bg-default text-neutral-content p-10 mt-20 border-t-1 border-neutral">
   <aside>
@@ -303,9 +336,74 @@
 </html>
 
 <script>
+
+  // first mokup
   document.getElementById("l1").textContent = '<html data-theme="forest"> <!-- HERE ! ;) -->';
   document.getElementById("l2").textContent = '  <head>';
   document.getElementById("l3").textContent = '  </head>';
   document.getElementById("l4").textContent = '</html>';
+
+  // seconde mookup
+
+  document.getElementById("21").textContent = ':root:has(input.theme-controller[value=mytheme]:checked),[data-theme="mytheme"] {';
+  document.getElementById("22").textContent = '/* PAST YOUR THEME HERE */';
+  document.getElementById("23").textContent = '}';
+
+
+  // 3 mookup
+
+    const themeLines = [
+    ':root:has(input.theme-controller[value=mytheme]:checked),[data-theme="mytheme"] {',
+    '  color-scheme: "light";',
+    '  --color-base-100: oklch(100% 0 0);',
+    '  --color-base-200: oklch(97% 0 0);',
+    '  --color-base-300: oklch(92% 0 0);',
+    '  --color-base-content: oklch(20% 0 0);',
+    '  --color-primary: oklch(64% 0.222 41.116);',
+    '  --color-primary-content: oklch(42% 0.095 57.708);',
+    '  --color-secondary: oklch(75% 0.183 55.934);',
+    '  --color-secondary-content: oklch(40% 0.123 38.172);',
+    '  --color-accent: oklch(0% 0 0);',
+    '  --color-accent-content: oklch(100% 0 0);',
+    '  --color-neutral: oklch(44% 0.011 73.639);',
+    '  --color-neutral-content: oklch(92% 0.003 48.717);',
+    '  --color-info: oklch(68% 0.169 237.323);',
+    '  --color-info-content: oklch(39% 0.09 240.876);',
+    '  --color-success: oklch(76% 0.177 163.223);',
+    '  --color-success-content: oklch(37% 0.077 168.94);',
+    '  --color-warning: oklch(84% 0.238 128.85);',
+    '  --color-warning-content: oklch(41% 0.112 45.904);',
+    '  --color-error: oklch(70% 0.191 22.216);',
+    '  --color-error-content: oklch(39% 0.141 25.723);',
+    '  --radius-selector: 2rem;',
+    '  --radius-field: 0rem;',
+    '  --radius-box: 2rem;',
+    '  --size-selector: 0.28125rem;',
+    '  --size-field: 0.3125rem;',
+    '  --border: 2px;',
+    '  --depth: 1;',
+    '  --noise: 0;',
+    '}'
+  ];
+
+  const container = document.getElementById("theme-code");
+
+  themeLines.forEach((line, index) => {
+    const pre = document.createElement("pre");
+    pre.setAttribute("data-prefix", index + 1);
+
+    const code = document.createElement("code");
+    code.textContent = line;
+
+    pre.appendChild(code);
+    container.appendChild(pre);
+  });
+
+  // 3 mookup
+  document.getElementById("31").textContent = '<html data-theme="mytheme"> <!-- HERE ! ;) -->';
+  document.getElementById("32").textContent = '  <head>';
+  document.getElementById("33").textContent = '   <link rel="stylesheet" href="themes.css">';
+  document.getElementById("34").textContent = '  </head>';
+  document.getElementById("35").textContent = '</html>';
 </script>
 

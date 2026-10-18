@@ -132,12 +132,26 @@
         <p class="mt-5">Font name :  Noto Sans</p>
         <div class="w-full bg-base-200 h-15 flex justify-center items-center rounded-box mt-3">
             <p>Tdoc your opensource documentation for your project !</p>
+
         </div>
 
         <p class="mt-10">Use for : Title or citation</p>
         <p class="mt-5">Font name :  Grape Nuts</p>
         <div class="w-full bg-base-200 h-15 flex justify-center items-center rounded-box mt-3 font-['Grape_Nuts'] text-xl">
             <p>Tdoc your opensource documentation for your project !</p>
+        </div>
+
+        <p class="mt-10 text-4xl font-['Grape_Nuts']">themes DaisyUI</p>
+
+        <p class="mt-3">The themes name is call : Forest on daisyUI</p>
+
+        <p class="mt-5">Code for use this themes :</p>
+
+        <div class="mockup-code mt-5">
+          <pre data-prefix="1"><code id="l1"></code></pre>
+          <pre data-prefix="2"><code id="l2"></code></pre>
+          <pre data-prefix="3"><code id="l3"></code></pre>
+          <pre data-prefix="4"><code id="l4"></code></pre>
         </div>
 
 
@@ -244,3 +258,11 @@
 
 </body>
 </html>
+
+<script>
+  document.getElementById("l1").textContent = '<html data-theme="forest">';
+  document.getElementById("l2").textContent = '  <head>';
+  document.getElementById("l3").textContent = '  </head>';
+  document.getElementById("l4").textContent = '</html>';
+
+</script>

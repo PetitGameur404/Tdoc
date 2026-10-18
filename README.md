@@ -2,7 +2,7 @@
 
 > Open source documentation template for your project.
 
-🔗 **[Live demo/docs](https://ton-user.github.io/Tdoc)**
+🔗 **[Live demo/docs](https://tdoc-documentation.netlify.app/)**
 
 ![screenshot](assets/screenshot/screenshot.png)
 

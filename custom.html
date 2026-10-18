@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="themes.css">
     <title>Tdoc</title>
 </head>
 <body>
@@ -81,7 +82,7 @@
         <p class="mt-5"> <big>As mentioned above, Tdoc uses DaisyUI, which comes with a complete theme <br> system with more than 30 built-in themes. You can also create your own if you <br>can't find the one that suits you.</big> </p>
 
         <h1 class="mt-10 text-2xl">Where is the theme</h1>
-        <p class="mt-5 text-base">You can find the themes in a html balise in the head of your code</p>
+        <p class="mt-5 text-base">You can find the themes in a html balise in above of your head</p>
 
         <p class="mt-5 text-lg">This is short pipline of the code :</p>
 
@@ -99,7 +100,108 @@
           <span>You can see all default themes <a class="font-bold" href="https://daisyui.com/theme-generator/">here</a></span>
         </div>
 
+        
+        <h1 class="mt-10 text-xl">selection of the most useful themes :</h1>
+
+      <div class="overflow-x-auto rounded-box bg-neutral/30 justify-center flex mt-10">
+        <table class="table">
+            <!-- head -->
+            <thead>
+            <tr>
+                <th></th>
+                <th>Theme</th>
+                <th>Style</th>
+                <th>Best for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- row 1 -->
+            <tr class="hover:bg-neutral">
+                <th>1</th>
+                <td>Light</td>
+                <td>Light, neutral</td>
+                <td>Classic docs</td>
+            </tr>
+            <!-- row 2 -->
+            <tr class="hover:bg-neutral">
+                <th>2</th>
+                <td>dark</td>
+                <td>Dark, neutral</td>
+                <td>Technical docs</td>
+            </tr>
+            <!-- row 3 -->
+            <tr class="hover:bg-neutral">
+                <th>3</th>
+                <td>forest</td>
+                <td>Dark, green</td>
+                <td>Dev / nature (MY FAVORITE :>)</td>
+            </tr>
+
+            <!-- row 4 -->
+            <tr class="hover:bg-neutral">
+                <th>4</th>
+                <td>cupcake</td>
+                <td>Light, soft</td>
+                <td>Friendly projects</td>
+            </tr>
+
+             <!-- row 5 -->
+            <tr class="hover:bg-neutral">
+                <th>5</th>
+                <td>corporate</td>
+                <td>Light, clean</td>
+                <td>Professional / business docs</td>
+            </tr>
+
+             <!-- row 6 -->
+            <tr class="hover:bg-neutral">
+                <th>5</th>
+                <td>dracula</td>
+                <td>Dark, purple</td>
+                <td>Developers</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div>
+          <h1 class="mb-4 mt-5 text-lg">Test the deferante themes :</h1>
+
+        <select class="select select-bordered" onchange="document.documentElement.setAttribute('data-theme', this.value)">
+          <option>forest (default)</option>
+          <option>light</option>
+          <option>dark</option>
+          <option>cupcake</option>
+          <option>dracula</option>
+        </select>
+        </div>
+
+        <h1 class="mt-10 text-2xl">Who to create your's</h1>
+        <p class="mt-5 text-base">If none of the themes are suitable for viewing the image, <br> no problem, you can create your own.</p>
+
+        <p class="text-2xl mt-10">1)</p>
+        <p class="mt-3">You need to go to DaisyUI theme generator</p>  
+
+        <div class="mockup-browser bg-base-200 w-full border border-base-300 mt-10">
+        <div class="mockup-browser-toolbar">
+      <div class="input">https://daisyui.com/theme-generator/</div>
       </div>
+      <img src="assets/daisyui.png" class="grid place-content-center h-180 object-cover" >
+    </div>
+
+        <p class="mt-10">Once on the page, you will have the option to use an existing theme <br> as a base and simply click to change elements such as colors, <br> raduis, and sizes.</p>
+
+        <div role="alert" class="alert alert-info alert-soft mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 shrink-0 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span>Check the "default theme" box so that it uses the custom theme by default.</span>
+        </div>
+
+        <p class="text-2xl mt-10">2)</p>
+        <p class="mt-3">You need to go to DaisyUI theme generator</p>
+
+    </div>
 
 
 </div>
@@ -143,7 +245,7 @@
             d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
         </svg>
       </a>
-      <a>
+      <a> 
         <svg
           aria-label="YouTube"
           xmlns="http://www.w3.org/2000/svg"
@@ -201,8 +303,9 @@
 </html>
 
 <script>
-  document.getElementById("l1").textContent = '<html data-theme="forest">';
+  document.getElementById("l1").textContent = '<html data-theme="forest"> <!-- HERE ! ;) -->';
   document.getElementById("l2").textContent = '  <head>';
   document.getElementById("l3").textContent = '  </head>';
   document.getElementById("l4").textContent = '</html>';
 </script>
+

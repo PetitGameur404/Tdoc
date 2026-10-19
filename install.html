@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<html data-theme="forest"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" /> <!-- import daisyui  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><!-- import tailwindcss  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" /> <!-- import daisyui themes tout  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="themes.css">
+    <title>Tdoc</title>
+</head>
+<body class="font-['Plus_Jakarta_Sans']">
+<div class="drawer lg:drawer-open">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+
+  <div class="drawer-content">
+    <nav class="navbar fixed w-full bg-base-300">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost drawer-button lg:hidden">
+        ☰
+      </label>
+      <img class="h-15" src="assets/logo.png" alt="">
+      <div class="px-4 font-bold">Tdoc</div>
+    </nav>
+
+    <div class="mt-20 px-8 flex justify-center">
+    
+    <div class="w-fit text-left">
+        <h1 class="text-6xl font-bold mb-4">
+        Setup your <span class="text-primary">Tdoc</span>
+        </h1>
+
+        <p class="mt-10 text-4xl font-['Grape_Nuts']">How to install it ?</p>
+        <p class="mt-5"> <big>In a first time Tdoc is based on HTML, <br> CSS with Tailwindcss and DaisyUI for components and themes.</big> </p>
+
+        <section id="prerequisites" class="scroll-mt-28 py-8">
+          <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">Step 01</p>
+          <h2 class="text-3xl font-bold">Prerequisites</h2>
+          <p class="mt-3 max-w-3xl opacity-80">Before downloading Tdoc, make sure these tools are installed. Git downloads the project; Visual Studio Code lets you inspect and edit its files.</p>
+          <div class="mt-6 grid gap-5 md:grid-cols-2">
+            <div class="card bg-base-200 border border-base-300">
+               <div class="card-body">
+                <div class="flex items-center gap-4"><div class="avatar placeholder"><div class="w-12 rounded-xl bg-base-300"><span class="text-xl">⌨</span></div></div><div><h3 class="card-title">Visual Studio Code</h3><p class="text-sm opacity-70">Code editor</p></div></div>
+                <p class="mt-3">Use VS Code to open the Tdoc folder, edit HTML and preview your changes.</p>
+                <a class="link link-primary mt-2" href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">Download VS Code ↗</a>
+              </div>
+            </div>
+            <div class="card bg-base-200 border border-base-300">
+              <div class="card-body">
+                <div class="flex items-center gap-4"><div class="avatar placeholder"><div class="w-12 rounded-xl bg-base-300"><span class="text-xl">⌘</span></div></div><div><h3 class="card-title">Git</h3><p class="text-sm opacity-70">Version control</p></div></div>
+                <p class="mt-3">Git lets you clone the repository from GitHub using a terminal.</p>
+                <a class="link link-primary mt-2" href="https://git-scm.com/downloads" target="_blank" rel="noreferrer">Download Git ↗</a>
+              </div>
+            </div>
+          </div>
+          <div role="alert" class="alert alert-info alert-soft mt-6">
+            <span class="text-xl">ⓘ</span><span>After installing Git, restart your terminal or VS Code if the <code>git</code> command is not recognized.</span>
+          </div>
+        </section>
+
+        <section id="prerequisites" class="scroll-mt-28 py-8">
+          <p class="mb-2 font-['Grape_Nuts'] text-3xl">Step 02</p>
+          <h2 class="text-3xl font-bold">compte</h2>
+          <p class="mt-3 max-w-3xl opacity-80">create a GitHub account so you can access the rest</p>
+          <div class="mt-6 grid gap-5 md:grid-cols-2">
+            <div class="card bg-base-200 border border-base-300">
+              <button class="btn bg-black text-white border-black">
+            <svg aria-label="GitHub logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
+            Create with GitHub
+            </button>
+          </div>
+        </section>
+
+        <section id="clone" class="scroll-mt-28 py-8">
+          <p class="mb-2 font-['Grape_Nuts'] text-3xl">Step 03</p>
+          <h2 class="text-3xl font-bold">Clone the Tdoc repository</h2>
+          <p class="mt-3 max-w-3xl opacity-80">Cloning creates a local copy of the project on your computer. Open a terminal (PowerShell, Windows Terminal or the VS Code terminal) and run the commands below one at a time.</p>
+
+          <div class="mt-6 space-y-5">
+            <div class="rounded-2xl border border-base-300 overflow-hidden">
+              <div class="flex items-center justify-between gap-3 bg-base-200 px-4 py-3"><div><span class="badge badge-primary mr-2">1</span><strong>Download the project</strong></div><button class="btn btn-xs btn-ghost copy-btn" data-copy="git clone https://github.com/PetitGameur404/Tdoc.git">Copy</button></div>
+              <div class="mockup-code rounded-none"><pre><code>git clone https://github.com/PetitGameur404/Tdoc.git</code></pre></div>
+              <p class="px-4 py-3 text-sm opacity-75">This creates a folder named <code>Tdoc</code> in your current directory.</p>
+            </div>
+            <div class="rounded-2xl border border-base-300 overflow-hidden">
+              <div class="flex items-center justify-between gap-3 bg-base-200 px-4 py-3"><div><span class="badge badge-primary mr-2">2</span><strong>Enter the project folder</strong></div><button class="btn btn-xs btn-ghost copy-btn" data-copy="cd Tdoc">Copy</button></div>
+              <div class="mockup-code rounded-none"><pre><code>cd Tdoc</code></pre></div>
+              <p class="px-4 py-3 text-sm opacity-75">The terminal is now working inside the project directory.</p>
+            </div>
+            <div class="rounded-2xl border border-base-300 overflow-hidden">
+              <div class="flex items-center justify-between gap-3 bg-base-200 px-4 py-3"><div><span class="badge badge-primary mr-2">3</span><strong>Open the project in VS Code</strong></div><button class="btn btn-xs btn-ghost copy-btn" data-copy="code .">Copy</button></div>
+              <div class="mockup-code rounded-none"><pre><code>code .</code></pre></div>
+              <p class="px-4 py-3 text-sm opacity-75">The dot means “open the current folder”. If the command is unavailable, open VS Code manually and choose <strong>File → Open Folder</strong>, then select <code>Tdoc</code>.</p>
+            </div>
+          </div>
+          <div role="alert" class="alert alert-warning alert-soft mt-6">
+            <span class="text-xl">!</span><span>Run <code>cd Tdoc</code> only after the clone command has completed successfully. If the folder already exists, choose another directory or rename the existing folder first.</span>
+          </div>
+        </section>
+
+         <section id="preview" class="scroll-mt-28 py-8">
+          <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">Step 04</p>
+          <h2 class="text-3xl font-bold">Preview Tdoc locally</h2>
+          <p class="mt-3 max-w-3xl opacity-80">Tdoc uses HTML with Tailwind CSS and DaisyUI loaded through CDN links. For a quick preview, you can open the homepage directly or use the Live Server extension in VS Code.</p>
+          <div class="mt-6 grid gap-5 md:grid-cols-2">
+            <div class="card bg-base-200 border border-base-300">
+              <div class="card-body">
+                <div class="badge badge-outline">Option A</div><h3 class="card-title">Open the HTML file</h3>
+                <ol class="list-decimal pl-5 space-y-2"><li>Find <code>index.html</code> in the VS Code Explorer.</li><li>Right-click the file and choose <strong>Reveal in File Explorer</strong> if needed.</li><li>Double-click <code>index.html</code> to open it in your browser.</li></ol>
+                <p class="text-sm opacity-70 mt-2">Good for a quick check of the homepage.</p>
+              </div>
+            </div>
+            <div class="card bg-base-200 border border-base-300">
+              <div class="card-body">
+            </div>
+          </div>
+         </section>
+
+         <section id="structure" class="scroll-mt-28 py-8">
+          <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">Step 05</p>
+          <h2 class="text-3xl font-bold">Understand the project structure</h2>
+          <p class="mt-3 opacity-80">Here are the main files you may edit when adapting Tdoc to your project.</p>
+          <div class="overflow-x-auto rounded-box border border-base-300 mt-5">
+            <table class="table table-zebra">
+              <thead><tr><th>File / folder</th><th>Purpose</th></tr></thead>
+              <tbody>
+                <tr><td><code>index.html</code></td><td>Homepage and main introduction.</td></tr>
+                <tr><td><code>custom.html</code></td><td>Customization guide.</td></tr>
+                <tr><td><code>design.html</code></td><td>Project visual identity and design references.</td></tr>
+                <tr><td><code>Contributing.html</code></td><td>Guidelines for contributing to Tdoc.</td></tr>
+                <tr><td><code>credits.html</code></td><td>Credits, technologies and authors.</td></tr>
+                <tr><td><code>assets/</code></td><td>Images and other static resources used by the pages.</td></tr>
+                <tr><td><code>themes.css</code></td><td>Optional custom DaisyUI theme definitions, if present in your copy.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+         <section id="tailwind" class="scroll-mt-28 py-8">
+          <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">Step 06</p>
+          <h2 class="text-3xl font-bold">How the styling works</h2>
+          <p class="mt-3 opacity-80">Tdoc combines HTML, Tailwind CSS utility classes and DaisyUI components. With the CDN setup, you can experiment directly in your HTML without creating a separate CSS file for each page.</p>
+          <div class="mt-6 grid gap-'' md:grid-cols-3">
+            <div class="card bg-base-200 border border-base-300"><div class="card-body"><h3 class="card-title">HTML</h3><p class="text-sm">Defines the content and page structure: headings, paragraphs, links and sections.</p><a class="link link-primary" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">HTML guide ↗</a></div></div>
+            <div class="card bg-base-200 border border-base-300"><div class="card-body"><h3 class="card-title">Tailwind CSS</h3><p class="text-sm">Utility classes control spacing, layout, typography and responsive behaviour.</p><a class="link link-primary" href="https://tailwindcss.com/docs/justify-content" target="_blank" rel="noreferrer">Tailwind docs ↗</a></div></div>
+            <div class="card bg-base-200 border border-base-300"><div class="card-body"><h3 class="card-title">DaisyUI</h3><p class="text-sm">Provides ready-made components such as buttons, cards, alerts, tables and themes.</p><a class="link link-primary" href="https://daisyui.com/docs/cdn/" target="_blank" rel="noreferrer">DaisyUI CDN docs ↗</a></div></div>
+          </div>
+          <h3 class="text-xl font-bold mt-8">Example: a button</h3>
+          <p class="mt-2 opacity-80">Tailwind handles spacing; DaisyUI supplies the button component and primary theme colour.</p>
+           <div class="mockup-code mt-5">
+          <pre data-prefix="1"><code id="l1"></code></pre>
+          </div>
+        <div class="divider"></div>
+    </section>
+
+</div>
+</div>
+
+
+
+
+<footer class="footer sm:footer-horizontal justify-evenly bg-default text-neutral-content p-10 mt-20 border-t-1 border-neutral">
+  <aside>
+      <img class="h-20" src="assets/logo.png" alt="">
+    <p>
+      Tdoc.
+      <br />
+      Open Source documentation,<br>
+      Designed and build by <a class="text-secondary underline" href="https://lucahallet.com">Luca Hallet</a> and <a class="text-secondary underline" href="#">Arthur Laffont</a>
+    </p>
+    <div class="flex flex-col">
+      <div class="divider divider-neutral w-100"></div>
+      <p>Code licensed <a class="underline font-medium" href="https://github.com/PetitGameur404/Tdoc/blob/main/LICENSE">MIT</a>, docs a <a class="underline font-medium" href="https://github.com/PetitGameur404/Tdoc/blob/main/LICENSE-DOCS.md">CC BY-SA 4.0.</a> Currently <strong>v1</strong></p>
+    </div>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Social</h6>
+    <div class="flex flex-row items-center gap-4">
+      <a href="https://x.com/PetitGameurLive">
+        <svg
+          aria-label="Twitter"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+      </a>
+      <a href="https://github.com/PetitGameur404">
+        <img class="h-8" src="assets/GitHub_Invertocat_White_Clearspace.svg" alt="">
+      </a>
+    </div>
+  </nav>
+</footer>
+
+</div>
+
+  <div class="drawer-side">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+
+    <ul class="menu bg-base-200 min-h-full w-64 p-4">
+      <li>
+        <h2 class="menu-title">First step</h2>
+        <ul>
+          <li><a href="index.html" class="menu-active">Homepage</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <h2 class="menu-title">Guide</h2>
+        <ul>
+          <li><a href="install.html">Installation</a></li>
+          <li><a href="config.html">Configuration</a></li>
+          <li><a href="custom.html">Customize</a></li>
+        </ul>
+      </li>
+      <h2 class="menu-title">Other</h2>
+      <ul>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="Contributing.html">Contributing</a></li>
+          <li><a href="credits.html">Credits</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+  document.getElementById("l1").textContent = '<a class="btn btn-primary mt-4" href="custom.html">';
+
+</script>

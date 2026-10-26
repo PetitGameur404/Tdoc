@@ -1,46 +1,50 @@
 # Tdoc
 
-> Open source documentation template for your project.
+Tdoc is a template of documentation for any project example (Api, tools, website, ect)
 
-🔗 **[Live demo/docs](https://tdoc-documentation.netlify.app/)**
+Based on HTML, css (TailwindCSS with daisyui) and JavaScript
+
+
+## Documentation how to use template:
+
+[documentation](https://tdoc-documentation.netlify.app/)
+
+## Previews
 
 ![screenshot](assets/screenshot/screenshot.png)
 
-## <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles preview-icon"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg> Features
 
-- 📝 Ready-to-use documentation template
-- 🎨 30+ themes with DaisyUI
-- ⚡ Build with HTML, Tailwind CSS and daisyUI
-- 🔧 Easy to customize
+# requirements
 
-## Getting started
+1. Git for use ```git clone``` command you can find them at https://git-scm.com/
 
-```bash
-git clone https://github.com/PetitGameur404/Tdoc.git
-cd Tdoc
-```
-The open 'index.html' in your browser (or use Live Server)
+2. Text editor the best known ```Visual Studio Code``` at https://code.visualstudio.com/
 
-## 🎨 Customization
+> For windows user make sure you have add git on your path [Tutoriel](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/).
 
-Change the theme in `index.html`:
 
-```html
-<html data-theme="forest">
-```
+# Installation
 
-See the **Custom** page of the docs for the full guide.
+For install Tdoc is very is 
 
-## 🤝 Contributing
+1. Open terminal and type ```git clone https://github.com/PetitGameur404/Tdoc```
 
-Contributions are welcome! Check the Contribute page in the docs.
+2. still in terminal ```cd Tdoc```
 
-## 📜 License
+3. and ```code .``` (if you use vscode or juste open project with your text editor)
 
-- Code: [MIT](https://github.com/PetitGameur404/Tdoc/blob/main/LICENSE)
-- Documentation content: [CC BY-SA 4.0](https://github.com/PetitGameur404/Tdoc/blob/main/LICENSE-DOCS.md)
+# Customize
 
-## 👥 Authors
+Tdoc use Daisyui for themes and components so is very is to change the themes
 
-- [Luca Hallet](https://lucahallet.com)
-- [Arthur Laffont](https://github.com/arthurlaffont9-code)
+1. You can find the themes in a html balise in above of your head
+
+2. edit the theme name ```<html data-theme="forest"> <!-- HERE ! ;) -->```
+
+All Daisyui themes : [all native themes](https://daisyui.com/theme-generator/)
+
+> More about Customize Tdoc at https://tdoc-documentation.netlify.app/custom
+
+# Credits
+
+[PetitGameur404](https://lucahallet.com)

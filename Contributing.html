@@ -96,6 +96,7 @@
         <p class="mt-5 text-xl">2) Clone, branch and push</p>
 
         <div class="mockup-code mt-5" id="git-code"></div>
+        <button class="btn btn-secondary mt-2" id="BtnCopy">Copy code</button>
 
          <div role="alert" class="alert alert-warning alert-soft mt-5">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
@@ -133,7 +134,7 @@
       Tdoc.
       <br />
       Open Source documentation,<br>
-      Designed and build by <a class="text-secondary underline" href="https://lucahallet.com">Luca Hallet</a> and <a class="text-secondary underline" href="#">Arthur Laffont</a>
+      Designed and build by <a class="text-secondary underline" href="https://lucahallet.com">Luca Hallet</a>
     </p>
     <div class="flex flex-col">
       <div class="divider divider-neutral w-100"></div>
@@ -230,6 +231,21 @@ function renderMockup(gitLines, lines) {
 
     pre.appendChild(code);
     container.appendChild(pre);
+  });
+
+
+  const button = document.getElementById("BtnCopy");
+  const text = 
+  `git clone https://github.com/PetitGameur404/Tdoc.git
+  cd tdoc
+  git checkout -b my-feature,
+  git add .,
+  git commit -m "Add my feature",
+  git push origin my-feature`;
+
+  button.addEventListener("click", () => {
+    navigator.clipboard.writeText(text);
+    alert("Text copy !")
   });
 
 </script>

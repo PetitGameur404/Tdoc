@@ -62,12 +62,14 @@
 
   <h1 class="text-2xl font-bold mt-10">Clone the Tdoc repository</h1>
   <p>Before downloading Tdoc, make sure these tools are installed. Git for git clone project and Visual studio code this is text editor</p>
+
   
         <div class="mockup-code mt-5">
           <pre data-prefix="1"><code id="l1"></code></pre>
           <pre data-prefix="2"><code id="l2"></code></pre>
           <pre data-prefix="3"><code id="l3"></code></pre>
         </div>
+        <button class="btn btn-secondary mt-2" id="BtnCopy">Copy code</button>
 
         
   <h1 class="text-2xl font-bold mt-10">Your are done</h1>
@@ -85,7 +87,7 @@
       Tdoc.
       <br />
       Open Source documentation,<br>
-      Designed and build by <a class="text-secondary underline" href="https://lucahallet.com">Luca Hallet</a> and <a class="text-secondary underline" href="#">Arthur Laffont</a>
+      Designed and build by <a class="text-secondary underline" href="https://lucahallet.com">Luca Hallet</a>
     </p>
     <div class="flex flex-col">
       <div class="divider divider-neutral w-100"></div>
@@ -168,6 +170,19 @@
 </html>
 
 <script>
+
+  const button = document.getElementById("BtnCopy");
+  const text = 
+  `git clone https://github.com/PetitGameur404/Tdoc.git
+  cd Tdoc
+  code .`;
+
+  button.addEventListener("click", () => {
+    navigator.clipboard.writeText(text);
+    alert("Text copy !")
+  });
+
+
   document.getElementById("l1").textContent = 'git clone https://github.com/PetitGameur404/Tdoc.git';
   document.getElementById("l2").textContent = 'cd Tdoc';
   document.getElementById("l3").textContent = 'code .';
